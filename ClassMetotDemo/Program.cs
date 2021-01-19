@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections;
+
 
 namespace ClassMetotDemo
 {
@@ -38,22 +38,18 @@ namespace ClassMetotDemo
             musteri4.Type = "Kurumsal";
 
 
-            Musteri[] musteriler = new Musteri[] {musteri1, musteri2, musteri3, musteri4 };
-
-            int a =musteriler.Length;
-            Console.WriteLine("Mevcut Müşteri Sayısı: {0}",a);
-          
+            Musteri[] musteriler = new Musteri[] { musteri1, musteri2, musteri3, musteri4 };
 
             MusteriManager musteriManager = new MusteriManager();
             
             musteriManager.Add(musteri4);
+            int a = musteriler.Length;
+            Console.WriteLine("Mevcut Müşteri Sayısı: {0} \n", a);
             musteriManager.Show(musteriler);
             musteriManager.Del(musteri3);
 
-            
-            
         }
 
-        
     }
+    
 }

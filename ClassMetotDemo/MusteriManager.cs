@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace ClassMetotDemo
+
 {
+
     class MusteriManager
     {
-
+        
         public void Add(Musteri musteri)
         {
             Console.WriteLine(musteri.Name + " " + musteri.Surname + " Müşteri Listesine Eklendi");
@@ -27,9 +29,7 @@ namespace ClassMetotDemo
                 Console.WriteLine("Şehir: {0} ", musteri.City);
                 Console.WriteLine("Müşteri Tipi: {0} ", musteri.Type + " \n");
             }
-
-
-
         }
+
     }
 }
